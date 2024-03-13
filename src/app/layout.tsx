@@ -1,10 +1,10 @@
 import { Metadata } from 'next';
-import Footer from '@/src/components/ui/Footer';
-import Navbar from '@/src/components/ui/Navbar';
-import { Toaster } from '@/src/components/ui/Toasts/toaster';
+import Footer from '@/components/ui/Footer';
+import Navbar from '@/components/ui/Navbar';
+import { Toaster } from '@/components/ui/Toasts/toaster';
 import { PropsWithChildren, Suspense } from 'react';
-import { getURL } from '@/src/utils/helpers';
-import 'styles/main.css';
+import { getURL } from '@/utils/helpers';
+import '@/styles/main.css';
 
 const meta = {
   title: 'Next.js Subscription Starter',

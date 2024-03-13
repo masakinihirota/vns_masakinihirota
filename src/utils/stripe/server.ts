@@ -1,15 +1,15 @@
 'use server';
 
 import Stripe from 'stripe';
-import { stripe } from '@/src/utils/stripe/config';
-import { createClient } from '@/src/utils/supabase/server';
-import { createOrRetrieveCustomer } from '@/src/utils/supabase/admin';
+import { stripe } from '@/utils/stripe/config';
+import { createClient } from '@/utils/supabase/server';
+import { createOrRetrieveCustomer } from '@/utils/supabase/admin';
 import {
   getURL,
   getErrorRedirect,
   calculateTrialEndUnixTimestamp
-} from '@/src/utils/helpers';
-import { Tables } from '@/types_db';
+} from '@/utils/helpers';
+import { Tables } from '@/types/database.types'
 
 type Price = Tables<'prices'>;
 

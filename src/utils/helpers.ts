@@ -1,4 +1,4 @@
-import type { Tables } from '@/types_db';
+import type { Tables } from '@/types/database.types'
 
 type Price = Tables<'prices'>;
 
