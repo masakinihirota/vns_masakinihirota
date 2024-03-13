@@ -7,11 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "prettier-fix": "prettier --write .",
-    "stripe:login": "stripe login",
-    "stripe:listen": "stripe listen --forward-to=localhost:3000/api/webhooks",
-    "stripe:fixtures": "stripe fixtures fixtures/stripe-fixtures.json",
-    "supabase:restart": "npm run supabase:stop && npm run supabase:start"
+    "prettier-fix": "prettier --write ."
   },
   "dependencies": {
     "@radix-ui/react-toast": "^1.1.5",
