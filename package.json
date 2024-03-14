@@ -6,8 +6,17 @@
     "dev": "next dev --turbo",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "prettier-fix": "prettier --write ."
+    "prettier-fix": "prettier --write .",
+    "test": "vitest",
+    "test:ui": "vitest --ui",
+    "coverage": "vitest run --coverage",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build",
+    "lint": "eslint --ext .ts,.js,.tsx,.jsx src",
+    "lint:debug": "eslint --ext .ts,.js,.tsx,.jsx src --debug",
+    "lint:fix": "eslint --ext .ts,.js,.tsx,.jsx src --fix",
+    "format": "prettier --write --ignore-path .gitignore './src/**/*.{js,jsx,ts,tsx,json}'",
+    "prepare": "husky"
   },
   "dependencies": {
     "@radix-ui/react-toast": "^1.1.5",
