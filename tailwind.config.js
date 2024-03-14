@@ -5,9 +5,9 @@ module.exports = {
   darkMode: ['class', '[data-theme="dark"]'],
   content: [
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/app/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/app/**/*.{js,ts,jsx,tsx,mdx}'
   ],
-  darkMode: "media",
+  darkMode: 'media',
   theme: {
     container: {
       center: true,

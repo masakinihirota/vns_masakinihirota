@@ -9,7 +9,7 @@ import {
   getErrorRedirect,
   calculateTrialEndUnixTimestamp
 } from '@/utils/helpers';
-import { Tables } from '@/types/database.types'
+import { Tables } from '@/types/database.types';
 
 type Price = Tables<'prices'>;
 
