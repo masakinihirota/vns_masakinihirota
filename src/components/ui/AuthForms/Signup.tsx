@@ -1,10 +1,10 @@
 'use client';
 
-import Button from '@/src/components/ui/Button';
+import Button from '@/components/ui/Button';
 import React from 'react';
 import Link from 'next/link';
-import { signUp } from '@/src/utils/auth-helpers/server';
-import { handleRequest } from '@/src/utils/auth-helpers/client';
+import { signUp } from '@/utils/auth-helpers/server';
+import { handleRequest } from '@/utils/auth-helpers/client';
 import { useRouter } from 'next/navigation';
 import { useState } from 'react';
 

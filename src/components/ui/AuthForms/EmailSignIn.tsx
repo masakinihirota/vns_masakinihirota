@@ -1,9 +1,9 @@
 'use client';
 
-import Button from '@/src/components/ui/Button';
+import Button from '@/components/ui/Button';
 import Link from 'next/link';
-import { signInWithEmail } from '@/src/utils/auth-helpers/server';
-import { handleRequest } from '@/src/utils/auth-helpers/client';
+import { signInWithEmail } from '@/utils/auth-helpers/server';
+import { handleRequest } from '@/utils/auth-helpers/client';
 import { useRouter } from 'next/navigation';
 import { useState } from 'react';
 
