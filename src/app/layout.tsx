@@ -13,7 +13,7 @@ const meta = {
   cardImage: '/og.png',
   robots: 'follow, index',
   favicon: '/favicon.ico',
-  url: getURL(),
+  url: getURL()
 };
 
 export async function generateMetadata(): Promise<Metadata> {
@@ -34,7 +34,7 @@ export async function generateMetadata(): Promise<Metadata> {
       description: meta.description,
       images: [meta.cardImage],
       type: 'website',
-      siteName: meta.title,
+      siteName: meta.title
     },
     twitter: {
       card: 'summary_large_image',
@@ -42,8 +42,8 @@ export async function generateMetadata(): Promise<Metadata> {
       creator: '@Vercel',
       title: meta.title,
       description: meta.description,
-      images: [meta.cardImage],
-    },
+      images: [meta.cardImage]
+    }
   };
 }
 

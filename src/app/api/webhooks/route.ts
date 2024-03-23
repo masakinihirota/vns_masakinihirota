@@ -5,7 +5,7 @@ import {
   upsertPriceRecord,
   manageSubscriptionStatusChange,
   deleteProductRecord,
-  deletePriceRecord,
+  deletePriceRecord
 } from '@/utils/supabase/admin';
 
 const relevantEvents = new Set([

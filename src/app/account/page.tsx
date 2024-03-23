@@ -8,7 +8,7 @@ export default async function Account() {
   const supabase = createClient();
 
   const {
-    data: { user },
+    data: { user }
   } = await supabase.auth.getUser();
 
   const { data: userDetails } = await supabase

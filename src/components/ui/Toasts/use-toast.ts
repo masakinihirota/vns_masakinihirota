@@ -3,7 +3,7 @@ import * as React from 'react';
 
 import type {
   ToastActionElement,
-  ToastProps,
+  ToastProps
 } from '@/components/ui/Toasts/toast';
 
 const TOAST_LIMIT = 1;
