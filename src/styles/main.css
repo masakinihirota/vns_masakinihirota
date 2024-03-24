@@ -1,7 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+/*
 *,
 *:before,
 *:after {
@@ -28,7 +28,7 @@ body {
     'Helvetica', sans-serif;
   text-rendering: optimizeLegibility;
   -moz-osx-font-smoothing: grayscale;
-  @apply text-white bg-zinc-800 antialiased;
+  @apply  bg-zinc-800 antialiased;
 }
 
 body {
@@ -56,4 +56,4 @@ p a {
 
 .height-screen-helper {
   min-height: calc(100vh - 80px);
-}
+} */

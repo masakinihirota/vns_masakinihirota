@@ -49,8 +49,8 @@ export async function generateMetadata(): Promise<Metadata> {
 
 export default async function RootLayout({ children }: PropsWithChildren) {
   return (
-    <html lang="en">
-      <body className="bg-black loading">
+    <html lang="ja">
+      <body className="loading">
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
