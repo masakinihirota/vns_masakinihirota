@@ -145,15 +145,15 @@ export default function Pricing({ user, products, subscription }: Props) {
             </div>
           </div>
           <div className="flex flex-wrap justify-center gap-6 mt-12 space-y-4 sm:mt-16 sm:space-y-0 lg:max-w-4xl lg:mx-auto xl:max-w-none xl:mx-0">
-            {products.map(product => {
+            {products.map((product) => {
               const price = product?.prices?.find(
-                price => price.interval === billingInterval
+                (price) => price.interval === billingInterval
               );
               if (!price) return null;
               const priceString = new Intl.NumberFormat('en-US', {
                 style: 'currency',
                 currency: price.currency!,
-                minimumFractionDigits: 0,
+                minimumFractionDigits: 0
               }).format((price?.unit_amount || 0) / 100);
               return (
                 <div
@@ -163,7 +163,7 @@ export default function Pricing({ user, products, subscription }: Props) {
                     {
                       'border border-pink-500': subscription
                         ? product.name === subscription?.prices?.products?.name
-                        : product.name === 'Freelancer',
+                        : product.name === 'Freelancer'
                     },
                     'flex-1', // This makes the flex item grow to fill the space
                     'basis-1/3', // Assuming you want each card to take up roughly a third of the container's width
