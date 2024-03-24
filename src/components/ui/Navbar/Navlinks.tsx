@@ -7,6 +7,7 @@ import Logo from '@/components/icons/Logo';
 import { usePathname, useRouter } from 'next/navigation';
 import { getRedirectMethod } from '@/utils/auth-helpers/settings';
 import s from './Navbar.module.css';
+import { ModeToggle } from './ModeToggle';
 
 interface NavlinksProps {
   user?: any;
@@ -25,6 +26,7 @@ export default function Navlinks({ user }: NavlinksProps) {
           <Link href="/" className={s.link}>
             Pricing
           </Link>
+          <ModeToggle />
           {user && (
             <Link href="/account" className={s.link}>
               Account

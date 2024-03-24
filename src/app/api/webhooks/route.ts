@@ -1,12 +1,12 @@
 import Stripe from 'stripe';
-import { stripe } from '@/src/utils/stripe/config';
+import { stripe } from '@/utils/stripe/config';
 import {
   upsertProductRecord,
   upsertPriceRecord,
   manageSubscriptionStatusChange,
   deleteProductRecord,
   deletePriceRecord
-} from '@/src/utils/supabase/admin';
+} from '@/utils/supabase/admin';
 
 const relevantEvents = new Set([
   'product.created',
